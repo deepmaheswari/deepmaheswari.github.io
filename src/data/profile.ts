@@ -5,7 +5,6 @@ export interface Profile {
   email: string
   linkedin: string
   github: string
-  location: string
 }
 
 export const profile: Profile = {
@@ -16,5 +15,4 @@ export const profile: Profile = {
   email: 'dmaheswa@asu.edu',
   linkedin: 'https://www.linkedin.com/in/deepmaheswari1',
   github: 'https://github.com/deepmaheswari',
-  location: 'Rockville, MD',
 }
