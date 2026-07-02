@@ -1,8 +1,16 @@
+import { motion } from 'framer-motion'
 import { experience } from '../data/experience'
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5 },
+}
 
 export default function Experience() {
   return (
-    <section id="experience" className="section">
+    <motion.section id="experience" className="section" {...fadeInUp}>
       <p className="section-label">// 03 — Experience</p>
       <h2 className="section-title">Experience</h2>
       <div className="timeline">
@@ -24,6 +32,6 @@ export default function Experience() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }

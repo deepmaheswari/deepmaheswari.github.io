@@ -1,8 +1,16 @@
+import { motion } from 'framer-motion'
 import { profile } from '../data/profile'
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5 },
+}
 
 export default function About() {
   return (
-    <section id="about" className="section about">
+    <motion.section id="about" className="section about" {...fadeInUp}>
       <p className="section-label">// 01 — About</p>
       <h2 className="section-title">About Me</h2>
       <div className="about-grid">
@@ -22,6 +30,6 @@ export default function About() {
           <span className="tag">🏆 The Tech Whisperer Award — Aramark</span>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
