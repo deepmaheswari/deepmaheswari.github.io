@@ -1,4 +1,5 @@
 import { profile } from '../data/profile'
+import HeroScene from './HeroScene'
 
 export default function Hero() {
   return (
@@ -13,7 +14,9 @@ export default function Hero() {
           <a href="#contact" className="btn btn-secondary">Contact Me</a>
         </div>
       </div>
-      <div id="hero-scene-mount" className="hero-scene" />
+      <div className="hero-scene">
+        <HeroScene />
+      </div>
     </section>
   )
 }
