@@ -41,11 +41,7 @@ function hasWebGL(): boolean {
 }
 
 export default function HeroScene() {
-  const [webglSupported, setWebglSupported] = useState(true)
-
-  useEffect(() => {
-    setWebglSupported(hasWebGL())
-  }, [])
+  const [webglSupported] = useState(() => hasWebGL())
 
   if (!webglSupported) {
     return <div className="hero-scene-fallback" />
