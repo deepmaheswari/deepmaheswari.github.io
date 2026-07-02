@@ -211,3 +211,46 @@ a:hover {
   color: var(--text);
   margin-bottom: 12px;
 }
+
+.timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-entry {
+  position: relative;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -34px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.6);
+}
+
+.timeline-role {
+  margin: 0 0 4px 0;
+}
+
+.timeline-meta {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.timeline-entry ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-dim);
+}
+
+.timeline-entry li {
+  margin-bottom: 8px;
+}
