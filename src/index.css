@@ -67,3 +67,107 @@ a:hover {
   padding: 4px 10px;
   margin: 4px 8px 4px 0;
 }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(10, 14, 20, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-brand {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: var(--text-dim);
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1 1 420px;
+}
+
+.hero-name {
+  font-size: 2.75rem;
+  margin: 8px 0 4px 0;
+}
+
+.hero-title {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  margin: 0 0 20px 0;
+}
+
+.hero-summary {
+  color: var(--text-dim);
+  max-width: 60ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background: var(--accent-dim);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+}
+
+.btn-secondary:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+.hero-scene {
+  flex: 1 1 360px;
+  min-height: 360px;
+}
